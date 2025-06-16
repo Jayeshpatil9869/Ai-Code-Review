@@ -155,6 +155,10 @@ The backend requires the following environment variable:
 
 ### Backend
 
+
+https://github.com/user-attachments/assets/46aefee8-4d7c-48ac-90f5-f23f81ad9466
+
+
 - `express`: Web framework.
 - `dotenv`: Environment variable management.
 - `cors`: Cross-origin resource sharing.
@@ -164,18 +168,7 @@ The backend requires the following environment variable:
 ## 📽️ Demo
 
 Watch the full demo of the AI Code Review Application:  
-[![Watch Video](https://github.com/user-attachments/assets/63916764-cabc-440a-862d-2a5ddebe9109)
+
+Uploading Ai-Code-Review- Made with Clipchamp.mp4…
 
 
-
-## License
-
-This project is licensed under the ISC License.
-
----
-
-## Acknowledgments
-
-- [Google Generative AI](https://developers.google.com/ai)
-- [React](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
