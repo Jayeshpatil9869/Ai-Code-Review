@@ -161,6 +161,12 @@ The backend requires the following environment variable:
 - `@google/generative-ai`: Google Generative AI integration.
 
 ---
+## 📽️ Demo
+
+Watch the full demo of the AI Code Review Application:  
+[![Watch Video](https://github.com/user-attachments/assets/63916764-cabc-440a-862d-2a5ddebe9109)
+
+
 
 ## License
 
