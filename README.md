@@ -156,7 +156,7 @@ The backend requires the following environment variable:
 ### Backend
 
 
-https://github.com/user-attachments/assets/46aefee8-4d7c-48ac-90f5-f23f81ad9466
+
 
 
 - `express`: Web framework.
@@ -168,7 +168,4 @@ https://github.com/user-attachments/assets/46aefee8-4d7c-48ac-90f5-f23f81ad9466
 ## 📽️ Demo
 
 Watch the full demo of the AI Code Review Application:  
-
-Uploading Ai-Code-Review- Made with Clipchamp.mp4…
-
-
+https://github.com/user-attachments/assets/46aefee8-4d7c-48ac-90f5-f23f81ad9466
