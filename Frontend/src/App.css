@@ -1,0 +1,195 @@
+:root {
+  --color-bg-body: #373737;          
+  --color-text: #e4e4e4;              
+  --color-panel-bg: #1a1a1a;          
+  --color-border: #2a2a2a;            
+  --color-editor-bg: #0f0f0f;         
+  --color-button-bg: #303030;         
+  --color-button-hover: #444444;      
+  --color-heading: #ffffff;           
+  --color-scroll-thumb: #333333;      
+  --color-scroll-track: #1c1c1c;      
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background-color: var(--color-bg-body);
+  color: var(--color-text);
+}
+
+/* Main App Container */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Shared Panel Styling */
+main .left,
+main .right {
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* Left Panel (Editor) */
+main .left {
+  flex: 1 1 100%;
+  background-color: var(--color-panel-bg);
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  min-height: 50%;
+  max-height: 100%;
+  position: relative;
+}
+
+/* Code Editor Container */
+.left .code {
+  flex: 1;
+  background-color: var(--color-editor-bg);
+  border-radius: 0.6rem;
+  padding: 2px;
+  overflow: auto;
+}
+
+.left .code *:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* Highlight Styles */
+.code pre,
+.code pre code {
+  background-color: transparent;
+  font-size: 0.95rem;
+  min-height: 100%;
+}
+
+/* Review Button */
+.left .review {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  align-self: flex-end;
+  background-color: var(--color-button-bg);
+  color: white;
+  padding: 0.6rem 1.8rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.left .review:hover {
+  background-color: var(--color-button-hover);
+}
+
+/* Right Panel (Output) */
+main .right {
+  flex: 1 1 100%;
+  background-color: var(--color-panel-bg);
+  padding: 1.4rem 2.6rem;
+  min-height: 40%;
+  max-height: 100%;
+  overflow: auto; 
+  line-height: 1.6;
+}
+
+/* Markdown Styling */
+.right h1,
+.right h2,
+.right h3 {
+  color: var(--color-heading);
+  margin-top: 1rem;
+}
+
+/* Tablet & Larger */
+@media (min-width: 768px) {
+  main {
+    flex-wrap: nowrap;
+  }
+
+  .left,
+  .right {
+    flex: 1 1 48%;
+    height: 100%;
+    min-height: auto;
+    max-height: none;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  main {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .left .review {
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+  }
+
+  .right {
+    font-size: 1.05rem;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 600px) {
+  main {
+    padding: 0.8rem;
+    gap: 1rem;
+  }
+
+  .left .review {
+    align-self: stretch;
+    text-align: center;
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+    border-radius: 0.45rem;
+  }
+
+  .code {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .right {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+   height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-scroll-track);
+}
+::-webkit-scrollbar-thumb {
+  
+  background: var(--color-scroll-thumb);
+  border-radius: 50px;
+}
